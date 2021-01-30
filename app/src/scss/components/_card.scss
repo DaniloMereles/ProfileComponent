@@ -1,0 +1,81 @@
+.card{
+    width: 320px;
+    height: 360px;
+    border-radius: 10px;
+    background-color: var(--White);
+    position: relative;
+    &__pattern{
+        width: 100%;
+        height: 120px;
+        background-image: url(../img/bg-pattern-card.svg);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    &__avatar{
+        position: absolute;
+        top: 70px;
+        left: 105px;
+        border: 5px solid var(--White); 
+        border-radius: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    &__userInfo{
+        width: 100%;
+        height: 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        .card__userInfoContainer{
+            width: 100%;
+            height: 190px;
+            .card__Username{
+                width: 100%;
+                height: auto;
+                text-align: center;
+                padding: 10px;
+                margin-top: 15px;
+                .title{
+                    font-size: 20px;
+                    color: var(--Verydarkdesaturatedblue);
+                    margin: 5px;
+                    .detail{
+                        color: var(--Darkgray);
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+
+                .description{
+                    font-size: 14px;
+                    color: var(--Darkgray);
+                }
+            }
+
+            .card__socialMediaNumbers{
+                width: 100%;
+                height: 80px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                .socialNumbers{
+                    .h3{
+                        color: var(--Darkgrayishblue);
+                        font-size: 20px;
+                    }
+                    .description{
+                        color: var(--Darkgray);
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
